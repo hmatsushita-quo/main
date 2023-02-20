@@ -1,7 +1,9 @@
 import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+import org.jetbrains.kotlin.ir.backend.js.compile
 
 plugins {
     kotlin("jvm") version "1.8.10"
+    application
 }
 
 group = "org.example"
@@ -13,6 +15,7 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation(project(":sub"))
 }
 
 tasks.test {
@@ -21,4 +24,8 @@ tasks.test {
 
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "1.8"
+}
+
+application {
+    mainClassName = "MainKt" // Class name run task will execute
 }
