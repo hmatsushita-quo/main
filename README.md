@@ -4,4 +4,4 @@
 
 [参考](https://qiita.com/ma2saka/items/4bd00ef6f8c240847807#git-submodule-update---init----recursive-%E3%81%A7%E5%86%8D%E5%B8%B0%E7%9A%84%E3%81%AB%E6%9B%B4%E6%96%B0%E3%81%99%E3%82%8B)
 
-test
+test/test2
